@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark-900 text-white font-body;
+  }
+
+  ::selection {
+    @apply bg-gold-400/30 text-gold-100;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-500 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gold-600;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-dark-700/40 backdrop-blur-xl border border-white/5 rounded-2xl;
+  }
+
+  .gold-gradient-text {
+    @apply bg-gradient-to-r from-gold-300 via-gold-400 to-gold-200 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900 font-semibold px-6 py-3 rounded-xl 
+           transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/25 hover:scale-[1.02] 
+           active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply border border-white/20 text-white font-medium px-6 py-3 rounded-xl 
+           transition-all duration-300 hover:bg-white/10 hover:border-white/30;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+

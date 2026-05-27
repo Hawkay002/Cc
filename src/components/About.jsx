@@ -1,7 +1,7 @@
 import ScrollReveal from './ScrollReveal';
 import { Award, Leaf, Clock, ShieldCheck } from 'lucide-react';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { OrganicFoodIcon, DeliveredSentIcon, Award04Icon, SecureIcon } from '@hugeicons/core-free-icons';
+import { OrganicFoodIcon, DeliveredSentIcon, Award04Icon, SecuredNetworkIcon } from '@hugeicons/core-free-icons';
 
 const features = [
   {
@@ -23,7 +23,7 @@ const features = [
     desc: 'Average delivery time of 25 minutes with real-time GPS tracking.',
   },
   {
-    icon: SecureIcon,
+    icon: SecuredNetworkIcon,
     lucide: ShieldCheck,
     title: 'HACCP Certified',
     desc: 'Highest food safety standards maintained in our state-of-the-art kitchen.',

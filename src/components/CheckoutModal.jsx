@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle, Loader2, AlertCircle } from 'lucide-react';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { TelegramIcon, UserIcon, PhoneIcon, Location01Icon } from '@hugeicons/core-free-icons';
+import { TelegramIcon, UserIcon, AiPhone01Icon, Location01Icon } from '@hugeicons/core-free-icons';
 import { useCart } from '../context/CartContext';
 
 export default function CheckoutModal({ isOpen, onClose }) {
@@ -154,7 +154,7 @@ export default function CheckoutModal({ isOpen, onClose }) {
 
                     <div>
                       <label className="flex items-center gap-2 text-sm font-medium text-white/60 mb-2">
-                        <HugeiconsIcon icon={PhoneIcon} size={16} color="currentColor" strokeWidth={1.5} />
+                        <HugeiconsIcon icon={AiPhone01Icon} size={16} color="currentColor" strokeWidth={1.5} />
                         Phone / WhatsApp
                       </label>
                       <input

@@ -1,7 +1,7 @@
 import ScrollReveal from './ScrollReveal';
 import { Award, Leaf, Clock, ShieldCheck } from 'lucide-react';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { OrganicFoodIcon, FastDeliveryIcon, Award04Icon, SecureIcon } from '@hugeicons/core-free-icons';
+import { OrganicFoodIcon, DeliveredSentIcon, Award04Icon, SecureIcon } from '@hugeicons/core-free-icons';
 
 const features = [
   {
@@ -17,7 +17,7 @@ const features = [
     desc: 'Our chefs trained at world-renowned restaurants before bringing their craft to you.',
   },
   {
-    icon: FastDeliveryIcon,
+    icon: DeliveredSentIcon,
     lucide: Clock,
     title: 'Lightning Fast',
     desc: 'Average delivery time of 25 minutes with real-time GPS tracking.',

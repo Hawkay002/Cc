@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Minus, Plus, ShoppingBag, Trash2 } from 'lucide-react';
 import { HugeiconsIcon } from '@hugeicons/react';
-import { EmptyBoxIcon } from '@hugeicons/core-free-icons';
+import { BoardMathIcon } from '@hugeicons/core-free-icons';
 import { useCart } from '../context/CartContext';
 
 export default function CartDrawer({ isOpen, onClose, onCheckout }) {
@@ -54,7 +54,7 @@ export default function CartDrawer({ isOpen, onClose, onCheckout }) {
                     className="flex flex-col items-center justify-center h-full text-center py-12"
                   >
                     <div className="w-20 h-20 rounded-2xl bg-dark-700 flex items-center justify-center mb-4">
-                      <HugeiconsIcon icon={EmptyBoxIcon} size={40} color="#ffffff20" strokeWidth={1} />
+                      <HugeiconsIcon icon={BoardMathIcon} size={40} color="#ffffff20" strokeWidth={1} />
                     </div>
                     <h3 className="font-display text-xl font-semibold text-white/60 mb-2">Your cart is empty</h3>
                     <p className="text-sm text-white/30">Add some delicious items to get started!</p>
